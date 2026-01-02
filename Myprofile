@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Profile Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+        .header {
+            background-color: #4267B2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+        }
+        .main-content {
+            flex: 2;
+            background: white;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .post {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .post img {
+            max-width: 100%;
+            height: auto;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #4267B2;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic"> <!-- Replace with actual profile pic URL or local file -->
+        <h1>Profile Name</h1> <!-- Replace with real name from the Facebook profile -->
+        <p>Bio: This is a sample bio. Add the real bio here from the profile.</p> <!-- Replace with actual bio -->
+    </div>
+
+    <div class="container">
+        <div class="main-content">
+            <h2>Recent Posts</h2>
+            <div class="post">
+                <h3>Post Title 1</h3>
+                <p>Sample post content. Replace with real post text from the Facebook profile.</p>
+                <img src="https://via.placeholder.com/400x200" alt="Post Image"> <!-- Replace with actual post image -->
+                <p>Likes: 123 | Comments: 45</p>
+            </div>
+            <div class="post">
+                <h3>Post Title 2</h3>
+                <p>Another sample post. Customize with real data.</p>
+                <img src="https://via.placeholder.com/400x200" alt="Post Image">
+                <p>Likes: 67 | Comments: 12</p>
+            </div>
+            <!-- Add more posts as needed -->
+        </div>
+
+        <div class="sidebar">
+            <h3>About</h3>
+            <p><strong>Location:</strong> Sample City, Country</p> <!-- Replace with real location -->
+            <p><strong>Friends:</strong> 500+</p> <!-- Replace with real friend count or details -->
+            <p><strong>Joined:</strong> January 2020</p> <!-- Replace with real join date -->
+            <h3>Photos</h3>
+            <img src="https://via.placeholder.com/100" alt="Photo 1" style="margin: 5px;">
+            <img src="https://via.placeholder.com/100" alt="Photo 2" style="margin: 5px;">
+            <!-- Add more photos -->
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Facebook Profile Website. Not affiliated with Facebook.</p>
+    </div>
+
+    <script>
+        // Optional: Add simple interactivity, e.g., like buttons
+        document.querySelectorAll('.post').forEach(post => {
+            const likeBtn = document.createElement('button');
+            likeBtn.textContent = 'Like';
+            likeBtn.onclick = () => alert('Liked!');
+            post.appendChild(likeBtn);
+        });
+    </script>
+</body>
+</html>
